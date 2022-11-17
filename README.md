@@ -17,6 +17,7 @@ To launch the development environment:
 ```
 docker compose up -d --build
 ```
+- check the result here: http://localhost:8000/admin
 ---
 To launch the production environment:
 ```sh
@@ -28,7 +29,7 @@ docker compose -f docker-compose.prod.yml up -d --build \
 && docker compose -f docker-compose.prod.yml exec web python manage.py migrate --no-input \
 && docker compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
 ```
-
+- check the result here: http://localhost:1337/admin
 ---
 You can rename the initial ***books*** project and change all the files that depend on its name with this script:
 ```sh
