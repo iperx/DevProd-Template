@@ -30,7 +30,7 @@ docker compose -f docker-compose.prod.yml up -d --build \
 ```
 
 ---
-You can rename initial ***books*** project and change all the files that depend on its name with this script:
+You can rename the initial ***books*** project and change all the files that depend on its name with this script:
 ```sh
 ./rename.sh books {new_project_name}
 ```
